@@ -1,6 +1,6 @@
 # embertodo
 
-This application is built using emberJS 2.18. It connects to a Laravel backend through Ember Data RESTAPI. The application allows the end user to add new todo items, delete them or mark them as complete. 
+This application is built using emberJS 2.18. It connects to a Laravel backend through Ember Data RESTAPI. The application allows the end user to add new todo items, delete them or mark them as complete. The laravel application is built using Laravel 5.2 and is added to my github account.
 
 ## Prerequisites
 
