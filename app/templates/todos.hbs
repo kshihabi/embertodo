@@ -1,0 +1,14 @@
+<div class="header">
+    <h2> משימות <a class="add" href="#" {{action 'addtodo'}}>{{fa-icon "plus"}}</a>   </h2>
+
+</div>
+{{#each model as |todoUnit index|}}
+     {{todo-listing rowindex=index todo=todoUnit}}
+{{/each}}
+<div class="emptyblock"></div>
+<div class="counters">
+    <span class="count"> סה"כ: {{model.length}}</span>
+    <span class="count"> לסיום: {{remaining.length}}</span>
+    <span class="count"> הושלמו: {{completed.length}}</span>
+</div>
+{{outlet}}

@@ -1,0 +1,22 @@
+<article class="listing">
+<div class="row {{todo.Iscompleted}} " >
+
+    <label>
+    <input
+            class="toggle"
+            type="checkbox"
+            checked={{todo.Iscompleted}}
+                    onchange={{action "toggleCompleted"}}
+    >
+        <span></span>
+    </label>
+    <div class="details">
+    <span class>{{add rowindex 1}}.</span><span ondblclick={{action "startEditing"}}>{{todo.Task}}</span>
+    </div>
+
+    <input class="edit" value={{todo.Task}} onblur={{action "doneEditing" value="target.value"}} onkeydown={{action "handleKeydown"}}
+            autofocus>
+    <button {{action "removetodo" this.todo}} class="btn btn-danger destroy">{{fa-icon "remove"}}</button>
+
+</div>
+</article>
